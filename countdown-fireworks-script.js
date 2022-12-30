@@ -1,5 +1,5 @@
 // Set the countdown timer target date
-const countdownDate = moment().endOf('year');
+const countdownDate = moment("2022-12-30 15:30:00", "YYYY-MM-DD HH:mm:ss").endOf('minute');
 
 // Set the countdown timer update interval (in milliseconds)
 const updateInterval = 1000;
