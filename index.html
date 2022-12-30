@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown Timer</title>
+  <style>
+    /* Add some styling to center the countdown timer on the page */
+    .countdown {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    /* Add some styling for the countdown timer */
+    .countdown__time {
+      font-size: 2em;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Add a container for the countdown timer -->
+  <div class="countdown">
+    <!-- Add a heading for the countdown timer -->
+    <h2>Countdown to New Year's Eve</h2>
+    <!-- Add a container for the time remaining -->
+    <div class="countdown__time" id="countdown-time">
+      <!-- The countdown timer will be inserted here -->
+    </div>
+  </div>
+
+  <!-- Add a canvas element to display the fireworks -->
+  <canvas id="fireworks"></canvas>
+
+  <!-- Include the moment.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <!-- Include the fireworks.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/fireworks.js@1.0.0/dist/fireworks.min.js"></script>
+  <!-- Include the countdown timer and fireworks display script -->
+  <script src="./countdown-timer.js"></script>
+</body>
+</html>
